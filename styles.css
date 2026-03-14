@@ -1,0 +1,77 @@
+body {
+    background-color: #eee;
+}
+#bg {
+    
+    background-color: black;
+    border-radius: 30px;
+    width: 30%;
+    height: 70%;
+    padding: 1%;
+    margin: 2% auto;
+}
+
+#texts {
+    height: auto;
+    text-align: right;
+    padding-right: 10% ;
+    margin-top: 10%;
+    font-family:monospace;
+    font-weight: 200;
+}
+
+#operacion {
+    color: #a1a1a1;
+    font-size: 30px;
+    margin: 1px;
+}
+#numero {
+    color: white;
+    margin: 1px;
+    font-size: 50px;
+    height: 50px;
+}
+
+#btns {
+    height: 73%;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto auto;
+    margin: 0 auto;
+}
+#btns button{
+    margin: 3% 4%;
+    border-radius:  50px / 100%;
+    width: 90% ;
+    height: auto;
+    font-family:'Courier New';
+    font-weight: bold;
+    border: 0;
+    color: white;
+    font-size: 25px;
+}
+
+.GreyBtns{
+    background-color: #aaa;
+}
+.GreyBtns:hover {
+    background-color: #a0a0a0;
+}
+.OperatorBtns{
+    background-color: #ff9a00;
+}
+.OperatorBtns:hover{
+    background-color: #e28800;
+}
+.NumberBtns{
+    background-color: #2a2a2a;
+}
+.NumberBtns:hover{
+    background-color: #363636;
+}
+
+#zero {
+    margin-top: 1%;
+    grid-column: 1/3;
+}
