@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <img id="Image" src="FocoApagado.png" width="350px" height="350px">
+        <button id="btn" onclick="turn()">prender</button>
+        <script>
+            let state = false;
+            function turn(){
+                state = !state;
+                if(state){
+                    document.getElementById("Image").src = "FocoPrendido.png";
+                    document.getElementById("btn").innerHTML = "apagar";
+
+                }else{
+                    document.getElementById("Image").src = "FocoApagado.png";
+                    document.getElementById("btn").innerHTML = "prender";
+                }
+            }
+        </script>
+    </body>
+</html>
