@@ -1,5 +1,7 @@
+
 <html>
     <head>
+        <script src="script.js"></script>
         <title>Calculadora</title>
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -7,30 +9,30 @@
     <body>
         <div id="bg">
             <div id="texts">
-                <p id="operacion">123123</p>
-                <p id="numero">123123</p>
+                <p id="operacion">0</p>
+                <p id="numero">0</p>
             </div>
         
         <div id="Btns">
-            <button class="GreyBtns">C</button>
-            <button class="GreyBtns">AC</button>
-            <button class="GreyBtns">%</button>
-            <button class="OperatorBtns">/</button>
-            <button class="NumberBtns">7</button>
-            <button class="NumberBtns">8</button>
-            <button class="NumberBtns">9</button>
-            <button class="OperatorBtns">X</button>
-            <button class="NumberBtns">4</button>
-            <button class="NumberBtns">5</button>
-            <button class="NumberBtns">6</button>
-            <button class="OperatorBtns">+</button>
-            <button class="NumberBtns">1</button>
-            <button class="NumberBtns">2</button>
-            <button class="NumberBtns">3</button>
-            <button class="OperatorBtns">-</button>
-            <button class="NumberBtns" id="zero">0</button>
-            <button class="NumberBtns">.</button>
-            <button class="OperatorBtns">=</button>
+            <button class="GreyBtns" onclick="btnC()">C</button>
+            <button class="GreyBtns" onclick="btnAc()">AC</button>
+            <button class="GreyBtns"onclick="btnOperator('%')">%</button>
+            <button class="OperatorBtns" onclick="btnOperator('/')" >/</button>
+            <button class="NumberBtns" onclick="btnNumber(7)">7</button>
+            <button class="NumberBtns" onclick="btnNumber(8)">8</button>
+            <button class="NumberBtns" onclick="btnNumber(9)">9</button>
+            <button class="OperatorBtns" onclick="btnOperator('x')">X</button>
+            <button class="NumberBtns" onclick="btnNumber(4)">4</button>
+            <button class="NumberBtns" onclick="btnNumber(5)">5</button>
+            <button class="NumberBtns" onclick="btnNumber(6)">6</button>
+            <button class="OperatorBtns" onclick="btnOperator('+')">+</button>
+            <button class="NumberBtns" onclick="btnNumber(1)">1</button>
+            <button class="NumberBtns" onclick="btnNumber(2)">2</button>
+            <button class="NumberBtns" onclick="btnNumber(3)">3</button>
+            <button class="OperatorBtns" onclick="btnOperator('-')">-</button>
+            <button class="NumberBtns" id="zero" onclick="btnNumber(0)">0</button>
+            <button class="NumberBtns" onclick="btnNumber('.')">.</button>
+            <button class="OperatorBtns" onclick="btnOperator('=')">=</button>
         </div>
     </div>
     </body>
